@@ -2,8 +2,8 @@ package shop
 
 import (
 	"errors"
-	"golang-book/go_shop/items"
-	"golang-book/go_shop/users"
+	"golang-book/shop_git/items"
+	"golang-book/shop_git/users"
 	"reflect"
 	"testing"
 )

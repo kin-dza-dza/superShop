@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-import "golang-book/go_shop/items"
-import "golang-book/go_shop/users"
-import "golang-book/go_shop/shop"
+import "golang-book/shop_git/items"
+import "golang-book/shop_git/users"
+import "golang-book/shop_git/shop"
 
 func main() {
 	fmt.Println("Hello World")
