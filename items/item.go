@@ -1,3 +1,4 @@
+//hello, iteration 1
 package items
 
 type item struct {
