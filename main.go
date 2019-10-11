@@ -6,9 +6,9 @@ import (
 	"fmt"
 )
 
-import "golang-book/shop_git/items"
-import "golang-book/shop_git/users"
-import "golang-book/shop_git/shop"
+import "golang-book/shop_git2/superShop/items"
+import "golang-book/shop_git2/superShop/users"
+import "golang-book/shop_git2/superShop/shop"
 
 func main() {
 	fmt.Println("Hello World")
@@ -32,11 +32,15 @@ func main() {
 
 	//создает новый шоп и тут же обновляет его,
 	// убирая все товары с невозможной стоимостью
-	shop := shop.NewShopPrepare(items, users)
+	shop2 := shop.NewShopPrepare(items, users)
 
-	err := shop.Buy([]string{"apple", "banana"}, "masha")
-	shop.Intrigue(err, "masha")
+	//ненужная штука для проверки CI. Можно убирать потом
+	fl := true
+	shop.HelloPrint(fl)
 
-	err = shop.Buy([]string{"apple", "banana"}, "natasha")
-	shop.Intrigue(err, "natasha")
+	err := shop2.Buy([]string{"apple", "banana"}, "masha")
+	shop2.Intrigue(err, "masha")
+
+	err = shop2.Buy([]string{"apple", "banana"}, "natasha")
+	shop2.Intrigue(err, "natasha")
 }
