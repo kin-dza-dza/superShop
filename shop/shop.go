@@ -309,6 +309,12 @@ func getItem(order []string, index int) string {
 	return item
 }
 
+func HelloPrint (fl bool) {
+	if fl == true {
+		fmt.Println("я все еще живой, и я все еще магазин")
+	}
+}
+
 //
 //func (ns *NewShopUpdater) NewShopUpdate(s *shop, items []Itemer, users []Useer) {
 //	//апдейт юзеров
